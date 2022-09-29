@@ -4,9 +4,93 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox Landing Page</title>
+  <title>Pagina Latina</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+
+  <header>
+    <img src="./images/squished/logo-squished.jpg" alt="pompeiian fresco" height="50">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#linkedContent">Read</a></li>
+        <li><a href="#action">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="about">
+    <div id="aboutText">
+      <h1>What is Latin?</h1>
+      <p>It is an old language that some say still exists!</p>
+    </div>
+    <img src="./images/logo.jpg" width="200">
+  </div>
+
+  <!--Image credit to: Enric Domas, Gabriella Clare Marino, Antonia Felipe, and Adam Winger. All were sourced on Unsplash-->
+
+  <div id="linkedContent">
+    <h2>Read Some Latin!</h2>
+    <div class="cards">
+      <div class="card">
+        <a href="https://www.zachlow.com/latin/easy-latin-plays-macrons.html">
+          <img src="./images/squished/enric-domas-iD4r0bm0ZDU-unsplash-squished.jpg" alt="Roman amphitheater">
+        </a>
+        <p>Easy Latin Plays</p>
+      </div>
+      <div class="card">
+        <a href="https://www.zachlow.com/latin/pro-patria.html">
+          <img src="./images/squished/gabriella-clare-marino-fUD1Y7RlQ40-unsplash-squished.jpg" alt="Roman street sign saying SPQR ACQUA MARCIA">
+        </a>
+        <p>Pro Patria</p>
+      </div>
+      <div class="card">
+        <a href="https://www.zachlow.com/latin/julia-macrons.html">
+          <img src="./images/squished/antonia-felipe-Tg3IDFoJqos-unsplash-squished.jpg" alt="marble sculpture of Roman woman">
+        </a>
+        <p>Julia</p>
+      </div>
+      <div class="card">
+        <a href="https://www.zachlow.com/latin/fabella-latinae-macrons.html">
+          <img src="./images/squished/adam-winger-RUoucfLlS7k-unsplash-squished.jpg" alt="two people looking at an open book with a mythological illustration">
+        </a>
+        <p>Fabella Latinae</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="quote">
+    <div id="quoteContent">
+      <blockquote>Poena tamen praesens, cum tu deponis amictus
+        turgidus et crudum pavonem in balnea portas.<br>
+        hinc subitae mortes atque intestata senectus;<br>
+        it nova nec tristis per cunctas fabula cenas:<br>
+        ducitur iratis plaudendum funus amicis.</blockquote>
+      <p><b>- Juvenal, <i>Satires</i> I.142-146</b></p>
+    </div>
+  </div>
+
+  <div id="action">
+    <div id="actionBox">
+        <div class="actionItem">
+          <h3>Interested in more?</h3>
+          <p>Sign up now for more information.</p>
+        </div>
+        <div class="actionItem">
+          <button type="button" onclick="sayHello()">Sign Up</button>
+        </div>
+    </div>
+  </div>
+
+  <footer>
+    Copyright © 2022 - Zach Low
+  </footer>
 </body>
+<script>
+  function sayHello () {
+    alert( 'Hiya! Thanks for clicking me. There\'s nothing here right now. Maybe check back in another two thousand years.' );
+  }
+</script>
 </html>
